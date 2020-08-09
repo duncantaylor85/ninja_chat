@@ -2,10 +2,12 @@
   <div class="welcome">
     <div class="text-center">
       <v-card max-width="400" class="mx-auto mt-12">
-        <v-card-title class="justify-center display-1">Welcome</v-card-title>
+        <v-card-title class="justify-center display-1 teal--text text--darken-3">Welcome</v-card-title>
 
         <v-container>
-          <v-card-title class="teal--text justify-center">Enter your name to start chatting:</v-card-title>
+          <v-card-title
+            class="teal--text text--darken-3 justify-center"
+          >Enter your name and start chatting:</v-card-title>
           <v-card-text class="mt-n2">
             <v-text-field
               @keydown.enter.prevent="enterChat"
