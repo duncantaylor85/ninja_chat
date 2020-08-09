@@ -2,6 +2,7 @@
   <div class="new-message">
     <v-form @submit.prevent="addMessage">
       <v-text-field
+        color="teal"
         @click:append-outer="addMessage"
         append-outer-icon="mdi-send"
         label="New Message (↵ enter to add)"
