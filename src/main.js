@@ -1,10 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import vuetify from "./plugins/vuetify";
+import VueChatScroll from "vue-chat-scroll";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+Vue.use(VueChatScroll);
 
 new Vue({
   router,
-  render: h => h(App)
-}).$mount('#app')
+  vuetify,
+  render: (h) => h(App),
+}).$mount("#app");
